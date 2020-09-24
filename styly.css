@@ -3,3 +3,11 @@
 	width: 400px;
 	height: auto;
 }
+
+.nazev {
+	margin: 0 0 20px 0;
+	font-family: 'Lobster';
+	font-size: 100px;
+	font-weight: normal;
+	color: black;
+}
