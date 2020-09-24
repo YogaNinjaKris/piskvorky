@@ -11,3 +11,11 @@
 	font-weight: normal;
 	color: black;
 }
+
+.odkazy a {
+	display: block;
+	padding: 10px;
+  text-align: center;
+  text-decoration: none;
+	color: black;
+}
