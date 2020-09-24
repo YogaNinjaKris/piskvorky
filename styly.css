@@ -4,6 +4,10 @@
 	height: auto;
 }
 
+.hlavicka {
+	position: relative;
+}
+
 .nazev {
 	margin: 0 0 20px 0;
 	font-family: 'Lobster';
@@ -17,5 +21,20 @@
 	padding: 10px;
   text-align: center;
   text-decoration: none;
-	color: black;
+	color: #ffffff;
+}
+
+.Pravidla{
+  background-color: #1fcca4;
+}
+
+.hrát{
+  background-color: #0197f6;
+}
+
+.Pravidla a:hover {
+	background-color: #1cbb96;
+}
+.hrát a:hover {
+  background-color: #0090e9;
 }
