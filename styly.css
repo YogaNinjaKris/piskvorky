@@ -3,6 +3,14 @@
 	width: 400px;
 	height: auto;
 }
+.profil {
+	margin: 50px;
+	width: 400px;
+	font-size: 14px;
+	background-color: #283e50;
+	color: #ffffff;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
 
 .hlavicka {
 	position: relative;
@@ -13,7 +21,7 @@
 	font-family: 'Lobster';
 	font-size: 100px;
 	font-weight: normal;
-	color: black;
+	color: white;
 }
 
 .odkazy a {
@@ -37,4 +45,8 @@
 }
 .hrát a:hover {
   background-color: #0090e9;
+}
+.obsah {
+	/* text uvnitř obsahu odsadíme od okraje */
+	padding: 30px 20px 20px 20px;
 }
