@@ -16,7 +16,8 @@ body {
 .foto {
 	display: block;
 	width: 400px;
-	height: auto;
+  height: auto;
+  border-radius: 7px 7px 0 0;
 }
 .profil {
 	margin: 50px;
@@ -26,6 +27,7 @@ body {
 	background-color: #283e50;
   color: #ffffff;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 7px 7px 0 0;
 }
 
 .hlavicka {
