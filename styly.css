@@ -7,8 +7,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   margin: 0;
+  padding: 70px 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -63,6 +63,7 @@ body {
 .Pravidla{
   background-color: #1fcca4;
   width: 100%;
+  margin-bottom: 1px;
 }
 
 .hrát{
@@ -84,6 +85,116 @@ body {
   background-color: #0090e9;
 }
 .obsah {
-	/* text uvnitř obsahu odsadíme od okraje */
+	/* text uvnitř obsahu odsadíme od okraje-poslední code prvniho prikladu */
 	padding: 30px 20px 20px 20px;
+}
+
+.zarovnani {
+  padding: 0 20px;
+}
+.kontejner {
+  max-width: 90%;
+  border-radius: 7px 7px 0 0;
+  background-color: #283e50;
+  color: #ffffff;
+}
+@media screen and (min-width: 540px) and (max-width: 960px) {
+  .kontejner {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 960px) {
+  .kontejner {
+    width: 60%;
+  }
+}
+.obrazekpravidla{
+  width: 100%;
+}
+@media  screen and (min-width: 540px) and  (max-width: 960px){
+.obrazekpravidla{
+  width: 100%;
+  }
+}
+@media screen and(min-width: 540px) {
+  .kontejner{
+    width: 80%;
+  }
+}
+
+.nazev {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+.obsah2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px 30px;
+}
+@media screen and (min-width: 540px) {
+  .obsah2 {
+    width: calc / 2;
+    align-items: stretch;
+    margin: 0 20px 20px;
+  }
+}
+.druhacast {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.legenda {
+  font-style: italic;
+  text-align: center;
+  margin: 10px 0 0;
+  font-size: 16px;
+}
+@media screen and (min-width: 540px) {
+  .legenda {
+    font-size: 14px;
+  }
+}
+.list {
+    margin-bottom: 40px;
+    padding: 0 40px;
+  }
+.list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+.icon {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+.start  {
+    background-color: #0197f6;
+  }
+.start:hover{
+    background-color: #0090e9;
+  }
+.pravidla  {
+    background-color: #1fcca4;
+    margin-bottom: 1px;
+  }
+.pravidla:hover{
+    background-color: #1cbb96;
+  }
+
+.button {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+  }
+.button,
+.headline{
+  text-align: center;
 }
