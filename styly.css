@@ -110,8 +110,9 @@ body {
 }
 .obrazekpravidla{
   width: 100%;
+  height: auto;
 }
-@media  screen and (min-width: 540px) and  (max-width: 960px){
+@media screen and (min-width: 540px) and  (max-width: 960px){
 .obrazekpravidla{
   width: 100%;
   }
@@ -136,7 +137,7 @@ body {
 }
 @media screen and (min-width: 540px) {
   .obsah2 {
-    width: calc / 2;
+    width: calc(80% / 2);
     align-items: stretch;
     margin: 0 20px 20px;
   }
