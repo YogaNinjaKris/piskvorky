@@ -60,13 +60,13 @@ body {
 .odkazy li {
 	display: inline-block;
 }
-.Pravidla{
+.pravidla-homepage{
   background-color: #1fcca4;
   width: 100%;
   margin-bottom: 1px;
 }
 
-.hrát{
+.zacit-hrat{
   background-color: #0197f6;
   width: 100%;
 }
@@ -78,7 +78,7 @@ body {
   text-decoration: none;
 
 }
-.Pravidla a:hover {
+.pravidla-homepage a:hover {
 	background-color: #1cbb96;
 }
 .hrát a:hover {
