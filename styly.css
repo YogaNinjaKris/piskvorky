@@ -211,9 +211,10 @@ body {
   width: 80vmin;
 }
 .title {
-  font-size: 80px;
+  font-size: 3rem;
   font-family: Lobster;
   color: white;
+  margin: 20px 0;
 }
 .minimenicko {
   display: flex;
