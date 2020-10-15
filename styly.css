@@ -199,3 +199,93 @@ body {
 .headline{
   text-align: center;
 }
+
+/*část 3*/
+.hra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80vmin;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 80vmin;
+}
+.title {
+  font-size: 80px;
+  font-family: Lobster;
+  color: white;
+}
+.minimenicko {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.info {
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 10px;
+}
+.info::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2.75px solid white;
+  margin: 0;
+  margin-left: 5px;
+}
+.btns-minimenicko {
+  display: flex;
+}
+.btn {
+  border-radius: 10%;
+  border: 0;
+  margin: 3px;
+  height: 35px;
+}
+.home {
+  background-color: #1fcca4;
+}
+.home a {
+  display: block;
+}
+.restart a {
+  display: block;
+}
+.restart {
+  background-color: #0197f6;
+}
+.home:hover,
+.home:focus {
+  background-color: #1cbb96;
+}
+.restart:hover,
+.restart:focus {
+  background-color: #0090e9;
+}
+.hraci-pole {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0.5;
+  width: 100%;
+}
+.hraci-pole button {
+  width: 10%;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.hraci-pole button:hover,
+.hraci-pole button:focus {
+  filter: brightness(200%);
+}
+
+.hraci-pole button::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
