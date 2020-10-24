@@ -1,5 +1,11 @@
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
@@ -14,59 +20,59 @@ body {
 }
 
 .foto {
-	display: block;
-	width: 400px;
+  display: block;
+  width: 400px;
   height: auto;
   border-radius: 7px 7px 0 0;
 }
 .profil {
-	margin: 50px;
+  margin: 50px;
   width: 400px;
   font-size: 12px;
   text-align: center;
-	background-color: #283e50;
+  background-color: #283e50;
   color: #ffffff;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   border-radius: 7px 7px 0 0;
 }
 
 .hlavicka {
-	position: relative;
+  position: relative;
 }
 
 .nazev {
-	margin: 0 0 20px 0;
-	font-family: 'Lobster';
-	font-size: 80px;
-	font-weight: normal;
-	color: white;
+  margin: 0 0 20px 0;
+  font-family: 'Lobster';
+  font-size: 80px;
+  font-weight: normal;
+  color: white;
 }
 
 .odkazy a {
-	display: block;
-	padding: 10px;
+  display: block;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
-	color: #ffffff;
+  color: #ffffff;
 }
 
 .odkazy {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   list-style: none;
   width: 400px;
 }
 
 .odkazy li {
-	display: inline-block;
+  display: inline-block;
 }
-.pravidla-homepage{
+.pravidla-homepage {
   background-color: #1fcca4;
   width: 100%;
   margin-bottom: 1px;
 }
 
-.zacit-hrat{
+.zacit-hrat {
   background-color: #0197f6;
   width: 100%;
 }
@@ -76,17 +82,16 @@ body {
   padding: 10px;
   text-align: center;
   text-decoration: none;
-
 }
 .pravidla-homepage a:hover {
-	background-color: #1cbb96;
+  background-color: #1cbb96;
 }
 .hrát a:hover {
   background-color: #0090e9;
 }
 .obsah {
-	/* text uvnitř obsahu odsadíme od okraje-poslední code prvniho prikladu */
-	padding: 30px 20px 20px 20px;
+  /* text uvnitř obsahu odsadíme od okraje-poslední code prvniho prikladu */
+  padding: 30px 20px 20px 20px;
 }
 
 .zarovnani {
@@ -108,17 +113,17 @@ body {
     width: 60%;
   }
 }
-.obrazekpravidla{
+.obrazekpravidla {
   width: 100%;
   height: auto;
 }
-@media screen and (min-width: 540px) and  (max-width: 960px){
-.obrazekpravidla{
-  width: 100%;
+@media screen and (min-width: 540px) and (max-width: 960px) {
+  .obrazekpravidla {
+    width: 100%;
   }
 }
 @media screen and(min-width: 540px) {
-  .kontejner{
+  .kontejner {
     width: 80%;
   }
 }
@@ -161,42 +166,42 @@ body {
   }
 }
 .list {
-    margin-bottom: 40px;
-    padding: 0 40px;
-  }
+  margin-bottom: 40px;
+  padding: 0 40px;
+}
 .list li {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
+  margin-bottom: 10px;
+  font-size: 16px;
+}
 .icon {
   width: 1em;
   height: 1em;
   filter: invert(100%);
 }
-.start  {
-    background-color: #0197f6;
-  }
-.start:hover{
-    background-color: #0090e9;
-  }
-.pravidla  {
-    background-color: #1fcca4;
-    margin-bottom: 1px;
-  }
-.pravidla:hover{
-    background-color: #1cbb96;
-  }
+.start {
+  background-color: #0197f6;
+}
+.start:hover {
+  background-color: #0090e9;
+}
+.pravidla {
+  background-color: #1fcca4;
+  margin-bottom: 1px;
+}
+.pravidla:hover {
+  background-color: #1cbb96;
+}
 
 .button {
-    display: inline-block;
-    width: 100%;
-    height: auto;
-    padding: 10px 0;
-    color: #ffffff;
-    text-decoration: none;
-  }
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+}
 .button,
-.headline{
+.headline {
   text-align: center;
 }
 
@@ -290,3 +295,69 @@ body {
   display: block;
   padding-top: 100%;
 }
+
+/* část 4-js */
+
+/* krizek */
+.info-krizek {
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 10px;
+  position: relative;
+
+}
+.info-krizek:before,
+.info-krizek:after {
+  position: absolute;
+  left: 80px;
+  content: '';
+  height: 20px;
+  border: 1px solid white;
+  margin: 0;
+  margin-left: 5px;
+}
+.info-krizek:before {
+  transform: rotate(45deg);
+}
+.info-krizek:after {
+  transform: rotate(-45deg);
+
+/* kolečko */
+}
+.info-kolecko {
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 10px;
+}
+.info-kolecko::before {
+  content: '';
+}
+.info-kolecko::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2.75px solid white;
+  margin: 0;
+  margin-left: 5px;
+}
+
+/* js animace */
+.hraci__pole--circle {
+  background-image: url(circle.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  animation: createBox 0.10s;
+}
+
+.hraci__pole--cross {
+  background-image: url(cross.svg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  animation: createBox 0.10s;
+}
+
