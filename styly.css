@@ -1,10 +1,8 @@
-html {
-  box-sizing: border-box;
-}
+
 *,
 :after,
 :before {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -90,7 +88,6 @@ body {
   background-color: #0090e9;
 }
 .obsah {
-  /* text uvnitř obsahu odsadíme od okraje-poslední code prvniho prikladu */
   padding: 30px 20px 20px 20px;
 }
 
@@ -228,21 +225,7 @@ body {
   justify-content: space-between;
   padding-bottom: 10px;
 }
-.info {
-  display: flex;
-  font-size: 20px;
-  margin: 0;
-  padding-top: 10px;
-}
-.info::after {
-  content: '';
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2.75px solid white;
-  margin: 0;
-  margin-left: 5px;
-}
+
 .btns-minimenicko {
   display: flex;
 }
@@ -275,7 +258,7 @@ body {
 .hraci-pole {
   display: flex;
   flex-wrap: wrap;
-  opacity: 0.5;
+  background-color: #b0a8d2;
   width: 100%;
 }
 .hraci-pole button {
@@ -283,11 +266,12 @@ body {
   border: 1px solid black;
   margin: 0;
   padding: 0;
+  background-color: #b0a8d2;
 }
 
 .hraci-pole button:hover,
 .hraci-pole button:focus {
-  filter: brightness(200%);
+  filter: brightness(100%);
 }
 
 .hraci-pole button::before {
@@ -331,9 +315,7 @@ body {
   margin: 0;
   padding-top: 10px;
 }
-.info-kolecko::before {
-  content: '';
-}
+
 .info-kolecko::after {
   content: '';
   width: 20px;
@@ -342,6 +324,9 @@ body {
   border: 2.75px solid white;
   margin: 0;
   margin-left: 5px;
+}
+.info-kolecko::before {
+  content: '';
 }
 
 /* js animace */
@@ -361,3 +346,12 @@ body {
   animation: createBox 0.10s;
 }
 
+/* hrací pole vylepšení */
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
